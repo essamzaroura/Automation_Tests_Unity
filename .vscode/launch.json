@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug Current Test",
+            "request": "launch",
+            "mainClass": "org.testng.TestNG",
+            "args": [
+                "-d", "${workspaceFolder}/target/test-classes",
+                "-testjar", "${workspaceFolder}/target/test-classes",
+                "-testclass", "${relativeFile}"
+            ],
+            "vmArgs": "-ea",
+            "projectName": "automation-tests",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Run Current Test",
+            "request": "launch",
+            "mainClass": "org.testng.TestNG",
+            "args": [
+                "-d", "${workspaceFolder}/target/test-classes",
+                "-testjar", "${workspaceFolder}/target/test-classes",
+                "-testclass", "${relativeFile}"
+            ],
+            "vmArgs": "-ea",
+            "noDebug": true
+        }
+    ]
+}

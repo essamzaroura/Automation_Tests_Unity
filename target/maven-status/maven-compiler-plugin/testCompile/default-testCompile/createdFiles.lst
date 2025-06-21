@@ -1,0 +1,11 @@
+entities\Post.class
+pages\BasePage.class
+config\WebDriverSingleton.class
+pages\PostPage.class
+pages\LoginPage.class
+entities\Profile.class
+pages\PublisherPage.class
+config\Locators.class
+pages\ProfilePage.class
+entities\Publisher.class
+tests\UITests.class
