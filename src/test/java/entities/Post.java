@@ -1,30 +1,49 @@
 package entities;
 
 public class Post {
+    private String id;
     private String title;
     private Publisher publisher;
-    private boolean published = true; // Default to published
+    private String status;
 
-    public Post(String title, Publisher publisher) {
+    public Post(String title, String status, Publisher publisher) {
         if (publisher == null)
             throw new IllegalArgumentException("Post requires Publisher");
         this.title = title;
+        this.status = status;
         this.publisher = publisher;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Publisher getPublisher() {
         return publisher;
     }
 
-    public boolean isPublished() {
-        return published;
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
     }
 
-    public void setPublished(boolean published) {
-        this.published = published;
+    public String getStatus() {
+        return status;
     }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 }

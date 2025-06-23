@@ -10,8 +10,6 @@ public class PublisherPage extends BasePage {
         click(Locators.HAPPY_FOLDER_TAB);
         click(Locators.PUBLISHERS_MENU);
         click(Locators.NEW_PUBLISHER_BUTTON);
-
-        // Fill required fields
         type(Locators.PUBLISHER_NAME_FIELD, name);
         type(Locators.PUBLISHER_EMAIL_FIELD, email);
         // sleep(4);

@@ -2,7 +2,7 @@ package entities;
 
 public class Profile {
     private String name;
-    private Publisher publisher; // Required field
+    private Publisher publisher;
 
     public Profile(String name, Publisher publisher) {
         if (publisher == null)

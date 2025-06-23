@@ -3,13 +3,14 @@ package entities;
 public class Publisher {
     private String name;
     private String email;
-    private String status = "Active"; // Default status
+    private String id;
 
     public Publisher(String name, String email) {
         this.name = name;
         this.email = email;
     }
 
+    // Getters
     public String getName() {
         return name;
     }
@@ -18,11 +19,11 @@ public class Publisher {
         return email;
     }
 
-    public String getStatus() {
-        return status;
+    public String getId() {
+        return id;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setId(String id) {
+        this.id = id;
     }
 }

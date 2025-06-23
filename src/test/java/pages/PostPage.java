@@ -11,7 +11,6 @@ import entities.Publisher;
 
 public class PostPage extends BasePage {
 
-    // Create new post with required fields
     public Post createPost(String title, Publisher publisher, String post_status) {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(Locators.POSTS_MENU)).click();
@@ -24,7 +23,7 @@ public class PostPage extends BasePage {
         selectPostStatus(post_status);
         selectPublisher(publisher.getEmail());
         click(Locators.POST_SAVE_BUTTON);
-        return new Post(title, publisher);
+        return new Post(title, "ACTIVE", publisher);
     }
 
     private void selectPostStatus(String status) {
